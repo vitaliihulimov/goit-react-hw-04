@@ -47,6 +47,8 @@ export const fetchImages = async (query, page = 1) => {
       },
     });
 
+    console.log("API KEY:", API_KEY);
+
     const data = response.data;
 
     return data.results || [];
